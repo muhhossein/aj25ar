@@ -1496,14 +1496,14 @@
             .duration(600)
             .ease("linear")
             .text(function () {
-              return d.name_ar + "\n, " + d.title_ar;
+              return d.name_ar;
             });
           d3.select(".quote-group")
             .transition()
             .duration(600)
             .ease("linear")
             .text(function () {
-              return "" + d.org_ar + "";
+              return d.title_ar + "\n, " + d.org_ar;
             });
         })
         .on("mouseleave", function (d) {
